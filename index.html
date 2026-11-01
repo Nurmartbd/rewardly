@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101827">
 <title>Rewardly — Play & Earn Coins</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script src='//libtl.com/sdk.js' data-zone='12113425' data-sdk='show_12113425'></script>
 <style>
 :root{--bg:#0b1220;--panel:#121d30;--text:#f5f7fb;--muted:#aab7cc;--green:#36d399;--blue:#70a7ff;--line:#263751;--gold:#ffd166}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#17375a 0,#0b1220 42%);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);min-height:100vh}.wrap{max-width:1040px;margin:auto;padding:22px 16px 42px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:26px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;font-size:23px}.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#36d399,#70a7ff);display:grid;place-items:center;color:#07121e;font-size:24px}.pill{border:1px solid var(--line);background:#121d30;color:var(--muted);padding:8px 12px;border-radius:999px;font-size:12px}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.panel{background:linear-gradient(145deg,rgba(24,38,61,.96),rgba(18,29,48,.96));border:1px solid var(--line);border-radius:23px;padding:24px;box-shadow:0 16px 40px #0002}.eyebrow{color:var(--green);font-size:12px;font-weight:800;letter-spacing:1.4px}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:12px 0}.hero p{color:var(--muted);line-height:1.65;margin:0 0 20px}.balance{background:linear-gradient(145deg,#173f4a,#1b3153);border-radius:20px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;min-height:220px}.small{color:#c0d9df;font-size:13px}.coins{font-size:38px;font-weight:850;margin:8px 0;color:var(--gold)}.subcoins{font-size:13px;color:#d0dfed}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.game-icon{font-size:35px;width:62px;height:62px;border-radius:18px;background:#223451;display:grid;place-items:center;margin-bottom:15px}.card h2{font-size:18px;margin:0 0 8px}.card p{color:var(--muted);font-size:14px;line-height:1.55;min-height:44px;margin:0 0 18px}.btn{border:0;border-radius:12px;padding:12px 15px;background:var(--green);color:#062018;font-size:14px;font-weight:800;cursor:pointer;width:100%}.btn:hover{filter:brightness(1.05)}.btn.blue{background:var(--blue);color:#0a172a}.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:28px 2px 12px}.section-title h2{margin:0;font-size:21px}.section-title span{font-size:12px;color:var(--muted)}.notice{margin-top:18px;padding:14px 16px;border:1px solid #695b31;background:#3b321c66;color:#f8e4a4;border-radius:14px;font-size:13px;line-height:1.55}.status{color:var(--muted);font-size:13px;margin-top:12px;min-height:20px}.footer{text-align:center;color:#7f91aa;font-size:12px;margin-top:24px;line-height:1.7}.reset{margin-top:10px;background:transparent;color:#aab7cc;border:1px solid var(--line);border-radius:10px;padding:8px 11px;cursor:pointer}.task-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.task{border:1px solid var(--line);border-radius:16px;padding:16px;background:#0c1728}.task h3{margin:0 0 8px;font-size:16px}.task p{color:var(--muted);font-size:13px;line-height:1.5;min-height:38px}.task .btn:disabled{opacity:.45;cursor:not-allowed}.wheel-result{font-size:17px;font-weight:800;color:var(--gold);min-height:26px;margin:12px 0}.wheel-stage{display:flex;flex-direction:column;align-items:center;gap:14px;margin:18px auto 20px}.wheel-pointer{width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-top:26px solid #fff;filter:drop-shadow(0 2px 3px #0008);z-index:2;margin-bottom:-20px}.wheel-disc{width:min(76vw,300px);aspect-ratio:1;border-radius:50%;border:7px solid #e7edf7;box-shadow:0 0 0 5px #263751,0 12px 28px #0005;background:conic-gradient(#f94144 0deg 72deg,#f9c74f 72deg 144deg,#43aa8b 144deg 216deg,#577590 216deg 288deg,#9b5de5 288deg 360deg);position:relative;transition:transform 5s cubic-bezier(.12,.72,.12,1);overflow:hidden}.wheel-label{position:absolute;width:42px;text-align:center;font-weight:900;font-size:19px;color:white;text-shadow:0 1px 3px #0008;transform:translate(-50%,-50%);pointer-events:none}.wheel-label:nth-child(1){left:67.6%;top:25.7%}.wheel-label:nth-child(2){left:78.5%;top:59.3%}.wheel-label:nth-child(3){left:50%;top:80%}.wheel-label:nth-child(4){left:21.5%;top:59.3%}.wheel-label:nth-child(5){left:32.4%;top:25.7%}.wheel-hub{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:#f5f7fb;border:5px solid #d3deee;display:grid;place-items:center;color:#122033;font-weight:900;z-index:1}.header-mini-ad{display:block;box-sizing:border-box;width:100%;max-width:320px;height:0;min-height:0;margin:0 auto; padding:0 10px;overflow:hidden;visibility:hidden;opacity:0;pointer-events:none;text-align:center;border:0;border-radius:9px;background:#101b2b;color:#aab7cc;font-size:11px;transition:height .2s ease,opacity .2s ease,margin .2s ease}.header-mini-ad.active{height:72px;min-height:72px;margin:0 auto 16px;padding:6px 10px;visibility:visible;opacity:1;border:1px dashed #52637d;pointer-events:auto}.header-mini-ad small{display:block;font-size:9px;letter-spacing:.7px;color:#7f91aa;margin-bottom:2px}@media(max-width:720px){.task-list{grid-template-columns:1fr}.wheel-disc{width:min(76vw,270px)}}@media(max-width:720px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.card p{min-height:0}.top{align-items:flex-start}.panel{padding:20px}.balance{min-height:180px}.pill{max-width:150px;text-align:center}}
@@ -28,83 +29,114 @@
   <button class="btn blue" id="spinBtn" disabled>স্পিন করুন · ০ বাকি</button>
   <div class="wheel-result" id="spinResult" aria-live="polite"></div>
 </section>
-<div class="section-title"><h2>আপনার গেমস</h2><span>প্রতি রাউন্ডে ৫০ কয়েন</span></div><section class="grid"><article class="panel card"><div class="game-icon">🧠</div><h2>Quick Quiz</h2><p>একটি ছোট সাধারণ জ্ঞানের প্রশ্নের উত্তর দিন।</p><button class="btn" id="quizBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="quizStatus" aria-live="polite"></div></article><article class="panel card"><div class="game-icon">🎯</div><h2>Lucky Target</h2><p>লক্ষ্য বেছে নিন এবং একটি দ্রুত রাউন্ড খেলুন।</p><button class="btn" id="targetBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="targetStatus" aria-live="polite"></div></article><article class="panel card"><div class="game-icon">🧩</div><h2>Mini Puzzle</h2><p>সহজ একটি পাজল রাউন্ড সম্পন্ন করুন।</p><button class="btn" id="puzzleBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="puzzleStatus" aria-live="polite"></div></article></section><div class="section-title"><h2>📺 Watch Ads & Earn</h2><span>বিজ্ঞাপন সম্পন্ন হলে কয়েন</span></div><section class="panel"><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><div style="font-size:38px">🪙</div><div style="flex:1;min-width:190px"><h2 style="margin:0 0 6px">Rewarded Ads</h2><p style="color:var(--muted);margin:0;line-height:1.6;font-size:14px">বিজ্ঞাপন उपलब्ध থাকলে দেখুন। SDK-এর সফল completion callback ফিরলেই এই ব্রাউজারের ডেমো ব্যালেন্সে ১০০ কয়েন যোগ হবে।</p></div><div style="width:190px;max-width:100%"><button class="btn" id="adBtn">বিজ্ঞাপন দেখুন · +১০০ কয়েন</button></div></div><div class="status" id="adStatus" aria-live="polite"></div></section><div class="notice"><strong>গুরুত্বপূর্ণ:</strong> এই সংস্করণে কয়েন আপনার বর্তমান ব্রাউজারে সংরক্ষিত থাকে এবং ডিভাইস বদলালে বা ব্রাউজারের ডেটা মুছলে হারাতে পারে। নিরাপদ লগইন, সার্ভার-ভিত্তিক ব্যালেন্স, আসল বিজ্ঞাপন নেটওয়ার্ক এবং নগদ উত্তোলন চালু করার আগে আলাদা ব্যাকএন্ড, নিরাপত্তা ও নীতিমালা যাচাই প্রয়োজন।</div><div style="text-align:center"><button class="reset" id="resetBtn">ডেমো ব্যালেন্স রিসেট</button></div></main><footer class="footer">Rewardly Starter · Prototype<br>Demo coins have no cash value. Balance is stored in this browser only.</footer></div>
+<div class="section-title"><h2>আপনার গেমস</h2><span>প্রতি রাউন্ডে ৫০ কয়েন</span></div><section class="grid"><article class="panel card"><div class="game-icon">🧠</div><h2>Quick Quiz</h2><p>একটি ছোট সাধারণ জ্ঞানের প্রশ্নের উত্তর দিন।</p><button class="btn" id="quizBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="quizStatus" aria-live="polite"></div></article><article class="panel card"><div class="game-icon">🎯</div><h2>Lucky Target</h2><p>লক্ষ্য বেছে নিন এবং একটি দ্রুত রাউন্ড খেলুন।</p><button class="btn" id="targetBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="targetStatus" aria-live="polite"></div></article><article class="panel card"><div class="game-icon">🧩</div><h2>Mini Puzzle</h2><p>সহজ একটি পাজল রাউন্ড সম্পন্ন করুন।</p><button class="btn" id="puzzleBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="puzzleStatus" aria-live="polite"></div></article></section><div class="section-title"><h2>📺 Watch Ads & Earn</h2><span>বিজ্ঞাপন সম্পন্ন হলে কয়েন</span></div><section class="panel"><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><div style="font-size:38px">🪙</div><div style="flex:1;min-width:190px"><h2 style="margin:0 0 6px">Rewarded Ads</h2><p style="color:var(--muted);margin:0;line-height:1.6;font-size:14px">বিজ্ঞাপন उपलब्ध থাকলে দেখুন। SDK-এর সফল completion callback ফিরলেই এই ব্রাউজারের ডেমো ব্যালেন্সে ১০০ কয়েন যোগ হবে।</p></div><div style="width:190px;max-width:100%"><button class="btn" id="adBtn">বিজ্ঞাপন দেখুন · +১০০ কয়েন</button></div></div><div class="status" id="adStatus" aria-live="polite"></div></section><div class="notice"><strong>গুরুত্বপূর্ণ:</strong> ডেমো কয়েন Telegram অ্যাকাউন্টের সঙ্গে Cloudflare KV-তে সংরক্ষিত হয়। এটি নগদ টাকা নয় এবং উত্তোলনযোগ্য নয়। বিজ্ঞাপন টাস্কের রিওয়ার্ড এখন Mini App-এর completion signal-এর ভিত্তিতে ডেমো হিসেবে যোগ হয়; প্রকৃত বিজ্ঞাপন-ভেরিফিকেশনের জন্য নেটওয়ার্কের server-to-server postback আলাদাভাবে যুক্ত করতে হবে।</div><div style="text-align:center"><button class="reset" id="resetBtn">সার্ভার ব্যালেন্স রিফ্রেশ</button></div></main><footer class="footer">Rewardly · Telegram-synced demo<br>Demo coins have no cash value. Balance is stored in Rewardly Cloudflare KV.</footer></div>
 <script>
-const START=1000,GAME_COST=50,AD_REWARD=100,key='rewardly_demo_balance_v1';const storedBalance=localStorage.getItem(key);let balance=storedBalance===null?START:Number(storedBalance);if(!Number.isFinite(balance)||balance<0)balance=START;const balanceEl=document.getElementById('balance');function save(){localStorage.setItem(key,String(balance));balanceEl.textContent=balance}function say(id,msg){document.getElementById(id).textContent=msg}function play(statusId,game){if(balance<GAME_COST){say(statusId,'কয়েন পর্যাপ্ত নয়। ডেমো রিওয়ার্ড অপশন ব্যবহার করে পরীক্ষা করুন।');return}balance-=GAME_COST;save();if(game==='quiz'){const a=prompt('প্রশ্ন: বাংলাদেশের রাজধানী কোনটি?\nA) ঢাকা  B) চট্টগ্রাম  C) খুলনা');say(statusId,a===null?'রাউন্ড শেষ। ৫০ কয়েন খরচ হয়েছে।':(['a','ঢাকা','dhaka'].includes(a.trim().toLowerCase())?'সঠিক উত্তর! 🎉 ':'এইবার সঠিক হয়নি। উত্তর: ঢাকা। ')+'৫০ কয়েন খরচ হয়েছে।')}else if(game==='target'){const n=Math.floor(Math.random()*3)+1;const a=prompt('১, ২ অথবা ৩—একটি লক্ষ্য বেছে নিন।');say(statusId,a===null?'রাউন্ড শেষ। ৫০ কয়েন খরচ হয়েছে।':(Number(a)===n?'লক্ষ্য মিলে গেছে! 🎯':'এইবার মেলেনি। সঠিক লক্ষ্য ছিল '+n+'.')+' ৫০ কয়েন খরচ হয়েছে।')}else{const a=prompt('পাজল: ২ + ৩ = কত?');say(statusId,a===null?'রাউন্ড শেষ। ৫০ কয়েন খরচ হয়েছে।':(a.trim()==='5'?'সঠিক! 🧩':'আবার চেষ্টা করুন! উত্তর ৫।')+' ৫০ কয়েন খরচ হয়েছে।')}}document.getElementById('quizBtn').onclick=()=>play('quizStatus','quiz');document.getElementById('targetBtn').onclick=()=>play('targetStatus','target');document.getElementById('puzzleBtn').onclick=()=>play('puzzleStatus','puzzle');document.getElementById('welcomeBtn').onclick=()=>say('welcomeStatus','ফ্রি কয়েন ব্যালেন্স ইতিমধ্যে প্রস্তুত। নতুন করে শুরু করতে রিসেট বাটন ব্যবহার করুন।');document.getElementById('resetBtn').onclick=()=>{if(confirm('ডেমো ব্যালেন্স ১০০০ কয়েনে রিসেট করবেন?')){balance=START;save();['quizStatus','targetStatus','puzzleStatus','adStatus','welcomeStatus'].forEach(id=>say(id,''));say('accountStatus','ডেমো ব্যালেন্স রিসেট হয়েছে')}};
-const dayKey='rewardly_monetag_day_v1', taskKey='rewardly_monetag_tasks_v1', spinKey='rewardly_monetag_spins_v1';
-const today=new Date().toISOString().slice(0,10);
-if(localStorage.getItem(dayKey)!==today){localStorage.setItem(dayKey,today);localStorage.setItem(taskKey,'0');localStorage.setItem(spinKey,'0')}
-let tasksDone=Number(localStorage.getItem(taskKey)||'0');
-let spinsLeft=Number(localStorage.getItem(spinKey)||'0');
+const API_URL='https://rewardly-bot-v2.homworkbd.workers.dev/';
+const START=1000,GAME_COST=50,AD_REWARD=100;
+const tg=window.Telegram&&window.Telegram.WebApp?window.Telegram.WebApp:null;
+if(tg){tg.ready();tg.expand();}
+let balance=START,tasksDone=0,spinsLeft=0,wheelBusy=false,wheelRotation=0;
+const balanceEl=document.getElementById('balance');
+function say(id,msg){const el=document.getElementById(id);if(el)el.textContent=msg;}
+function renderBalance(){balanceEl.textContent=String(balance);}
+async function api(action,extra={}){
+  if(!tg||!tg.initData)throw new Error('বটের Mini App থেকে খুলুন। সাধারণ ব্রাউজারে Telegram লগইন পাওয়া যাচ্ছে না।');
+  const response=await fetch(API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({type:'miniapp',action,initData:tg.initData,...extra})});
+  let data;try{data=await response.json();}catch{throw new Error('সার্ভার থেকে সঠিক উত্তর পাওয়া যায়নি।');}
+  if(!response.ok||!data.ok)throw new Error(data.error||'সার্ভার অনুরোধ সম্পন্ন হয়নি।');
+  return data;
+}
+function applyState(data){
+  if(typeof data.balance==='number')balance=data.balance;
+  if(typeof data.tasksDone==='number')tasksDone=data.tasksDone;
+  if(typeof data.spinsLeft==='number')spinsLeft=data.spinsLeft;
+  renderBalance();updateTasks();
+}
+async function refreshBalance(){
+  try{const data=await api('balance');applyState(data);say('accountStatus','Telegram ও Mini App ব্যালেন্স সিঙ্ক হয়েছে ✓');}
+  catch(e){say('accountStatus',e.message);}
+}
 function updateTasks(){
   for(let i=1;i<=3;i++){
     const btn=document.getElementById('task'+i+'Btn');
     btn.disabled=(i!==tasksDone+1)||tasksDone>=3;
-    if(i<=tasksDone){btn.textContent='সম্পন্ন ✓';say('task'+i+'Status','আজকের টাস্ক সম্পন্ন।')}
+    if(i<=tasksDone){btn.textContent='সম্পন্ন ✓';say('task'+i+'Status','আজকের টাস্ক সম্পন্ন।');}
+    else btn.textContent='বিজ্ঞাপন দেখুন';
   }
-  document.getElementById('spinBtn').disabled=spinsLeft<=0;
-  document.getElementById('spinBtn').textContent='স্পিন করুন · '+spinsLeft+' বাকি';
-  say('dailyStatus',tasksDone>=3?'অভিনন্দন! আজকের ৩টি টাস্ক সম্পন্ন। আপনার ৩টি স্পিন প্রস্তুত।':'সম্পন্ন টাস্ক: '+tasksDone+'/3');
+  const spinBtn=document.getElementById('spinBtn');
+  spinBtn.disabled=spinsLeft<=0||wheelBusy;
+  spinBtn.textContent='স্পিন করুন · '+spinsLeft+' বাকি';
+  say('dailyStatus',tasksDone>=3?'অভিনন্দন! আজকের ৩টি টাস্ক সম্পন্ন। আপনার '+spinsLeft+'টি স্পিন বাকি।':'সম্পন্ন টাস্ক: '+tasksDone+'/3');
 }
 async function showRewardedAd(){
-  if(typeof window.show_12113425!=='function') throw new Error('বিজ্ঞাপনের SDK এখনো লোড হয়নি। অনলাইনে প্রকাশিত পেজে আবার চেষ্টা করুন।');
+  if(typeof window.show_12113425!=='function')throw new Error('Monetag বিজ্ঞাপন SDK এখনো লোড হয়নি।');
   await window.show_12113425();
 }
 for(let i=1;i<=3;i++){
   document.getElementById('task'+i+'Btn').addEventListener('click',async()=>{
-    const btn=document.getElementById('task'+i+'Btn');
-    btn.disabled=true;say('task'+i+'Status','বিজ্ঞাপন লোড হচ্ছে…');
+    const btn=document.getElementById('task'+i+'Btn');btn.disabled=true;say('task'+i+'Status','বিজ্ঞাপন লোড হচ্ছে…');
     try{
       await showRewardedAd();
-      tasksDone=Math.min(3,tasksDone+1);
-      localStorage.setItem(taskKey,String(tasksDone));
-      balance+=AD_REWARD;save();
-      if(tasksDone===3){spinsLeft=3;localStorage.setItem(spinKey,'3');say('dailyStatus','৩টি টাস্ক সম্পন্ন! ৩টি স্পিন আনলক হয়েছে।')}
+      const data=await api('completeAdTask',{taskNumber:i});applyState(data);
       say('task'+i+'Status','বিজ্ঞাপন completion পাওয়া গেছে: +১০০ কয়েন');
-      updateTasks();
-    }catch(e){
-      say('task'+i+'Status',e&&e.message?e.message:'বিজ্ঞাপন সম্পন্ন হয়নি। রিওয়ার্ড দেওয়া হয়নি।');
-      btn.disabled=false;
-    }
+    }catch(e){say('task'+i+'Status',e.message);btn.disabled=false;}
   });
 }
 document.getElementById('adBtn').addEventListener('click',async()=>{
   const btn=document.getElementById('adBtn');btn.disabled=true;say('adStatus','বিজ্ঞাপন লোড হচ্ছে…');
-  try{await showRewardedAd();balance+=AD_REWARD;save();say('adStatus','বিজ্ঞাপন completion পাওয়া গেছে: +১০০ কয়েন যোগ হয়েছে।')}
-  catch(e){say('adStatus',e&&e.message?e.message:'বিজ্ঞাপন সম্পন্ন হয়নি; কয়েন যোগ হয়নি।')}
-  finally{btn.disabled=false}
+  try{await showRewardedAd();const data=await api('watchAd');applyState(data);say('adStatus','+১০০ ডেমো কয়েন যোগ হয়েছে।');}
+  catch(e){say('adStatus',e.message);}
+  finally{btn.disabled=false;}
 });
-let wheelBusy=false, wheelRotation=0;
+async function play(statusId,game){
+  const btn=({quiz:'quizBtn',target:'targetBtn',puzzle:'puzzleBtn'})[game];
+  document.getElementById(btn).disabled=true;say(statusId,'গেমের ফলাফল ও ব্যালেন্স সার্ভার থেকে আনা হচ্ছে…');
+  try{
+    const data=await api('play',{game});applyState(data);
+    if(game==='quiz'){
+      const answer=prompt('প্রশ্ন: বাংলাদেশের রাজধানী কোনটি?\nA) ঢাকা  B) চট্টগ্রাম  C) খুলনা');
+      say(statusId,(answer===null?'রাউন্ড শেষ। ':'আপনার উত্তর নেওয়া হয়েছে। ')+(data.won?'ডেমো গেমে +১০০ কয়েন জিতেছেন।':'এই রাউন্ডে পুরস্কার হয়নি।')+' ৫০ কয়েন খরচ হয়েছে।');
+    }else if(game==='target'){
+      const answer=prompt('১, ২ অথবা ৩—একটি লক্ষ্য বেছে নিন।');
+      say(statusId,(answer===null?'রাউন্ড শেষ। ':'আপনার পছন্দ নেওয়া হয়েছে। ')+(data.won?'ডেমো গেমে +১০০ কয়েন জিতেছেন।':'এই রাউন্ডে পুরস্কার হয়নি।')+' ৫০ কয়েন খরচ হয়েছে।');
+    }else{
+      const answer=prompt('পাজল: ২ + ৩ = কত?');
+      say(statusId,(answer===null?'রাউন্ড শেষ। ':'আপনার উত্তর নেওয়া হয়েছে। ')+(data.won?'ডেমো গেমে +১০০ কয়েন জিতেছেন।':'এই রাউন্ডে পুরস্কার হয়নি।')+' ৫০ কয়েন খরচ হয়েছে।');
+    }
+  }catch(e){say(statusId,e.message);}
+  finally{document.getElementById(btn).disabled=false;}
+}
+document.getElementById('quizBtn').onclick=()=>play('quizStatus','quiz');
+document.getElementById('targetBtn').onclick=()=>play('targetStatus','target');
+document.getElementById('puzzleBtn').onclick=()=>play('puzzleStatus','puzzle');
+document.getElementById('welcomeBtn').onclick=()=>say('welcomeStatus','আপনার Telegram অ্যাকাউন্টের ক্লাউড ব্যালেন্স ব্যবহার হচ্ছে।');
+document.getElementById('resetBtn').onclick=async()=>{if(confirm('সার্ভার থেকে বর্তমান ব্যালেন্স আবার লোড করবেন?'))await refreshBalance();};
+let wheelDisc=document.getElementById('wheelDisc');
 const wheelPrizes=[10,25,50,75,100];
-document.getElementById('spinBtn').addEventListener('click',()=>{
+document.getElementById('spinBtn').addEventListener('click',async()=>{
   if(spinsLeft<=0||wheelBusy)return;
-  wheelBusy=true;
-  const btn=document.getElementById('spinBtn');btn.disabled=true;
-  say('spinResult','🎡 চাকা ঘুরছে… অপেক্ষা করুন!');
-  // Show a compact header ad area only while spinning; existing ad network scripts remain untouched.
-  const adSlot=document.getElementById('headerMiniAd');
-  adSlot.classList.add('active');
-  const chosenIndex=Math.floor(Math.random()*wheelPrizes.length);
-  // Each segment is 72 degrees, starting at 12 o’clock. Align the chosen segment center with the pointer.
-  const segmentCenter=36+chosenIndex*72;
-  const currentMod=((wheelRotation%360)+360)%360;
-  const targetMod=(360-segmentCenter+360)%360;
-  const extra=(targetMod-currentMod+360)%360;
-  wheelRotation += 5*360+extra;
-  const disc=document.getElementById('wheelDisc');
-  disc.style.transform='rotate('+wheelRotation+'deg)';
-  window.setTimeout(()=>{
-    // Award the exact segment selected and aligned to the pointer above.
-    // Do not recalculate from a rounded CSS angle; that could award the neighboring segment.
-    const prize=wheelPrizes[chosenIndex];
-    spinsLeft--;localStorage.setItem(spinKey,String(spinsLeft));
-    balance+=prize;save();
-    say('spinResult','🎉 আপনি '+prize+' কয়েন জিতেছেন!');
-    adSlot.classList.remove('active');
-    wheelBusy=false;updateTasks();
-  },5000);
+  wheelBusy=true;updateTasks();say('spinResult','🎡 চাকা ঘুরছে… অপেক্ষা করুন!');
+  const adSlot=document.getElementById('headerMiniAd');if(adSlot)adSlot.classList.add('active');
+  try{
+    const data=await api('spin');
+    const chosenIndex=wheelPrizes.indexOf(data.prize);
+    if(chosenIndex<0)throw new Error('সার্ভার থেকে অজানা পুরস্কার এসেছে।');
+    // Server has already credited the exact prize. Animate the matching wheel segment.
+    const segmentCenter=36+chosenIndex*72;
+    const currentMod=((wheelRotation%360)+360)%360;
+    const targetMod=(360-segmentCenter+360)%360;
+    const extra=(targetMod-currentMod+360)%360;
+    wheelRotation+=5*360+extra;
+    wheelDisc.style.transform='rotate('+wheelRotation+'deg)';
+    setTimeout(()=>{
+      applyState(data);
+      say('spinResult','🎉 আপনি '+data.prize+' কয়েন জিতেছেন!');
+      if(adSlot)adSlot.classList.remove('active');
+      wheelBusy=false;updateTasks();
+    },5000);
+  }catch(e){if(adSlot)adSlot.classList.remove('active');wheelBusy=false;updateTasks();say('spinResult',e.message);}
 });
-updateTasks();
-
-save();
+window.addEventListener('focus',refreshBalance);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshBalance();});
+refreshBalance();
 </script></body></html>
