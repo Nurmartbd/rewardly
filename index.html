@@ -29,10 +29,10 @@
   <button class="btn blue" id="spinBtn" disabled>স্পিন করুন · ০ বাকি</button>
   <div class="wheel-result" id="spinResult" aria-live="polite"></div>
 </section>
-<div class="section-title"><h2>আপনার গেমস</h2><span>প্রতি রাউন্ডে ৫০ কয়েন</span></div><section class="grid"><article class="panel card"><div class="game-icon">🧠</div><h2>Quick Quiz</h2><p>একটি ছোট সাধারণ জ্ঞানের প্রশ্নের উত্তর দিন।</p><button class="btn" id="quizBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="quizStatus" aria-live="polite"></div></article><article class="panel card"><div class="game-icon">🎯</div><h2>Lucky Target</h2><p>লক্ষ্য বেছে নিন এবং একটি দ্রুত রাউন্ড খেলুন।</p><button class="btn" id="targetBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="targetStatus" aria-live="polite"></div></article><article class="panel card"><div class="game-icon">🧩</div><h2>Mini Puzzle</h2><p>সহজ একটি পাজল রাউন্ড সম্পন্ন করুন।</p><button class="btn" id="puzzleBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="puzzleStatus" aria-live="polite"></div></article></section><div class="section-title"><h2>📺 Watch Ads & Earn</h2><span>বিজ্ঞাপন সম্পন্ন হলে কয়েন</span></div><section class="panel"><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><div style="font-size:38px">🪙</div><div style="flex:1;min-width:190px"><h2 style="margin:0 0 6px">Rewarded Ads</h2><p style="color:var(--muted);margin:0;line-height:1.6;font-size:14px">বিজ্ঞাপন उपलब्ध থাকলে দেখুন। SDK-এর সফল completion callback ফিরলেই এই ব্রাউজারের ডেমো ব্যালেন্সে ১০০ কয়েন যোগ হবে।</p></div><div style="width:190px;max-width:100%"><button class="btn" id="adBtn">বিজ্ঞাপন দেখুন · +১০০ কয়েন</button></div></div><div class="status" id="adStatus" aria-live="polite"></div></section><div class="notice"><strong>গুরুত্বপূর্ণ:</strong> ডেমো কয়েন Telegram অ্যাকাউন্টের সঙ্গে Cloudflare KV-তে সংরক্ষিত হয়। এটি নগদ টাকা নয় এবং উত্তোলনযোগ্য নয়। বিজ্ঞাপন টাস্কের রিওয়ার্ড এখন Mini App-এর completion signal-এর ভিত্তিতে ডেমো হিসেবে যোগ হয়; প্রকৃত বিজ্ঞাপন-ভেরিফিকেশনের জন্য নেটওয়ার্কের server-to-server postback আলাদাভাবে যুক্ত করতে হবে।</div><div style="text-align:center"><button class="reset" id="resetBtn">সার্ভার ব্যালেন্স রিফ্রেশ</button></div></main><footer class="footer">Rewardly · Telegram-synced demo<br>Demo coins have no cash value. Balance is stored in Rewardly Cloudflare KV.</footer></div>
+<div class="section-title"><h2>আপনার গেমস</h2><span>প্রতি রাউন্ডে ৫০ কয়েন</span></div><section class="grid"><article class="panel card"><div class="game-icon">🧠</div><h2>Quick Quiz</h2><p>একটি ছোট সাধারণ জ্ঞানের প্রশ্নের উত্তর দিন।</p><button class="btn" id="quizBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="quizStatus" aria-live="polite"></div></article><article class="panel card"><div class="game-icon">🎯</div><h2>Lucky Target</h2><p>লক্ষ্য বেছে নিন এবং একটি দ্রুত রাউন্ড খেলুন।</p><button class="btn" id="targetBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="targetStatus" aria-live="polite"></div></article><article class="panel card"><div class="game-icon">🧩</div><h2>Mini Puzzle</h2><p>সহজ একটি পাজল রাউন্ড সম্পন্ন করুন।</p><button class="btn" id="puzzleBtn">খেলুন · ৫০ কয়েন</button><div class="status" id="puzzleStatus" aria-live="polite"></div></article></section><div class="section-title"><h2>📺 Watch Ads & Earn</h2><span>বিজ্ঞাপন সম্পন্ন হলে কয়েন</span></div><section class="panel"><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><div style="font-size:38px">🪙</div><div style="flex:1;min-width:190px"><h2 style="margin:0 0 6px">Rewarded Ads</h2><p style="color:var(--muted);margin:0;line-height:1.6;font-size:14px">বিজ্ঞাপন उपलब्ध থাকলে দেখুন। SDK-এর সফল completion callback ফিরলেই এই ব্রাউজারের ডেমো ব্যালেন্সে ১০০ কয়েন যোগ হবে।</p></div><div style="width:190px;max-width:100%"><button class="btn" id="adBtn">বিজ্ঞাপন দেখুন · +১০০ কয়েন</button></div></div><div class="status" id="adStatus" aria-live="polite"></div></section><div class="notice"><strong>গুরুত্বপূর্ণ:</strong> ডেমো কয়েন Telegram অ্যাকাউন্টের সঙ্গে Cloudflare KV-তে সংরক্ষিত হয়। এটি নগদ টাকা নয় এবং উত্তোলনযোগ্য নয়। বিজ্ঞাপন টাস্কের রিওয়ার্ড কেবল Monetag-এর server-to-server postback-এ valued নিশ্চিত হলে Cloudflare KV-তে যোগ হয়। একই বিজ্ঞাপনের postback দ্বিতীয়বার এলে পুনরায় কয়েন যোগ করার চেষ্টা বন্ধ রাখা হয়।</div><div style="text-align:center"><button class="reset" id="resetBtn">সার্ভার ব্যালেন্স রিফ্রেশ</button></div></main><footer class="footer">Rewardly · Telegram-synced demo<br>Demo coins have no cash value. Balance is stored in Rewardly Cloudflare KV.</footer></div>
 <script>
 const API_URL='https://rewardly-bot-v2.homworkbd.workers.dev/';
-const START=1000,GAME_COST=50,AD_REWARD=100;
+const START=1000,GAME_COST=50;
 const tg=window.Telegram&&window.Telegram.WebApp?window.Telegram.WebApp:null;
 if(tg){tg.ready();tg.expand();}
 let balance=START,tasksDone=0,spinsLeft=0,wheelBusy=false,wheelRotation=0;
@@ -68,34 +68,39 @@ function updateTasks(){
   spinBtn.textContent='স্পিন করুন · '+spinsLeft+' বাকি';
   say('dailyStatus',tasksDone>=3?'অভিনন্দন! আজকের ৩টি টাস্ক সম্পন্ন। আপনার '+spinsLeft+'টি স্পিন বাকি।':'সম্পন্ন টাস্ক: '+tasksDone+'/3');
 }
-async function showRewardedAd(requestVar){
-  if(typeof window.show_12113425!=='function')throw new Error('Monetag বিজ্ঞাপন SDK এখনো লোড হয়নি। পেজটি রিফ্রেশ করে আবার চেষ্টা করুন।');
-  // A unique ymid lets Monetag associate this exact ad show with its confirmation.
-  const ymid='rw-'+Date.now()+'-'+Math.random().toString(36).slice(2,10);
-  let result;
-  try{
-    result=await window.show_12113425({type:'end',ymid,requestVar});
-  }catch(err){
-    throw new Error('Monetag বিজ্ঞাপন যাচাই করতে পারেনি। বিজ্ঞাপন সম্পন্ন করে আবার চেষ্টা করুন।');
+async function showRewardedAd(ymid,requestVar){
+  if(typeof window.show_12113425!=='function')throw new Error('Monetag বিজ্ঞাপন SDK এখনো লোড হয়নি।');
+  return await window.show_12113425({ymid,requestVar});
+}
+const wait=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
+async function waitForServerReward(ymid){
+  for(let attempt=0;attempt<30;attempt++){
+    const status=await api('adTaskStatus',{ymid});
+    if(status.status==='rewarded')return status;
+    await wait(2000);
   }
-  if(result?.reward_event_type!=='valued'){
-    throw new Error('এই বিজ্ঞাপনের জন্য Monetag পেইড completion নিশ্চিত করেনি। তাই কয়েন দেওয়া হয়নি। অন্য বিজ্ঞাপন এলে পরে চেষ্টা করুন।');
+  throw new Error('Monetag-এর Server Postback এখনো আসেনি। Monetag Postback URL ও Worker Secret পরীক্ষা করতে হবে।');
+}
+async function runRewardedPlacement(kind,taskNumber){
+  const start=await api(kind==='task'?'startAdTask':'startWatchAd',kind==='task'?{taskNumber}:{});
+  const result=await showRewardedAd(start.ymid,start.requestVar);
+  if(result && result.reward_event_type!=='valued'){
+    throw new Error('এই বিজ্ঞাপনটি Monetag paid/valued হিসেবে নিশ্চিত করেনি। তাই কয়েন দেওয়া হয়নি। অন্য বিজ্ঞাপন এলে পরে চেষ্টা করুন।');
   }
-  return result;
+  return await waitForServerReward(start.ymid);
 }
 for(let i=1;i<=3;i++){
   document.getElementById('task'+i+'Btn').addEventListener('click',async()=>{
     const btn=document.getElementById('task'+i+'Btn');btn.disabled=true;say('task'+i+'Status','বিজ্ঞাপন লোড হচ্ছে…');
     try{
-      await showRewardedAd('task_'+i);
-      const data=await api('completeAdTask',{taskNumber:i});applyState(data);
-      say('task'+i+'Status','বিজ্ঞাপন completion পাওয়া গেছে: +১০০ কয়েন');
+      const data=await runRewardedPlacement('task',i);applyState(data);
+      say('task'+i+'Status','Monetag Server Postback নিশ্চিত করেছে: +১০০ কয়েন ✓');
     }catch(e){say('task'+i+'Status',e.message);btn.disabled=false;}
   });
 }
 document.getElementById('adBtn').addEventListener('click',async()=>{
   const btn=document.getElementById('adBtn');btn.disabled=true;say('adStatus','বিজ্ঞাপন লোড হচ্ছে…');
-  try{await showRewardedAd('watch_ads');const data=await api('watchAd');applyState(data);say('adStatus','+১০০ ডেমো কয়েন যোগ হয়েছে।');}
+  try{const data=await runRewardedPlacement('watch');applyState(data);say('adStatus','Monetag Server Postback নিশ্চিত করেছে: +১০০ কয়েন ✓');}
   catch(e){say('adStatus',e.message);}
   finally{btn.disabled=false;}
 });
