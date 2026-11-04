@@ -68,15 +68,26 @@ function updateTasks(){
   spinBtn.textContent='স্পিন করুন · '+spinsLeft+' বাকি';
   say('dailyStatus',tasksDone>=3?'অভিনন্দন! আজকের ৩টি টাস্ক সম্পন্ন। আপনার '+spinsLeft+'টি স্পিন বাকি।':'সম্পন্ন টাস্ক: '+tasksDone+'/3');
 }
-async function showRewardedAd(){
-  if(typeof window.show_12113425!=='function')throw new Error('Monetag বিজ্ঞাপন SDK এখনো লোড হয়নি।');
-  await window.show_12113425();
+async function showRewardedAd(requestVar){
+  if(typeof window.show_12113425!=='function')throw new Error('Monetag বিজ্ঞাপন SDK এখনো লোড হয়নি। পেজটি রিফ্রেশ করে আবার চেষ্টা করুন।');
+  // A unique ymid lets Monetag associate this exact ad show with its confirmation.
+  const ymid='rw-'+Date.now()+'-'+Math.random().toString(36).slice(2,10);
+  let result;
+  try{
+    result=await window.show_12113425({type:'end',ymid,requestVar});
+  }catch(err){
+    throw new Error('Monetag বিজ্ঞাপন যাচাই করতে পারেনি। বিজ্ঞাপন সম্পন্ন করে আবার চেষ্টা করুন।');
+  }
+  if(result?.reward_event_type!=='valued'){
+    throw new Error('এই বিজ্ঞাপনের জন্য Monetag পেইড completion নিশ্চিত করেনি। তাই কয়েন দেওয়া হয়নি। অন্য বিজ্ঞাপন এলে পরে চেষ্টা করুন।');
+  }
+  return result;
 }
 for(let i=1;i<=3;i++){
   document.getElementById('task'+i+'Btn').addEventListener('click',async()=>{
     const btn=document.getElementById('task'+i+'Btn');btn.disabled=true;say('task'+i+'Status','বিজ্ঞাপন লোড হচ্ছে…');
     try{
-      await showRewardedAd();
+      await showRewardedAd('task_'+i);
       const data=await api('completeAdTask',{taskNumber:i});applyState(data);
       say('task'+i+'Status','বিজ্ঞাপন completion পাওয়া গেছে: +১০০ কয়েন');
     }catch(e){say('task'+i+'Status',e.message);btn.disabled=false;}
@@ -84,7 +95,7 @@ for(let i=1;i<=3;i++){
 }
 document.getElementById('adBtn').addEventListener('click',async()=>{
   const btn=document.getElementById('adBtn');btn.disabled=true;say('adStatus','বিজ্ঞাপন লোড হচ্ছে…');
-  try{await showRewardedAd();const data=await api('watchAd');applyState(data);say('adStatus','+১০০ ডেমো কয়েন যোগ হয়েছে।');}
+  try{await showRewardedAd('watch_ads');const data=await api('watchAd');applyState(data);say('adStatus','+১০০ ডেমো কয়েন যোগ হয়েছে।');}
   catch(e){say('adStatus',e.message);}
   finally{btn.disabled=false;}
 });
